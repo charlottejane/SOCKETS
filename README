@@ -1,0 +1,25 @@
+Charlotte Wuennemann
+CS 576 Assignment 2
+Files: talker.c, listener.c, makefile
+
+
+What is it? 
+----------
+This is a UDP connectionless client-server pair.  The client will send a UDP 
+message to the server.  The server will start and run on port 5432 and return 
+the original message concatenated with a humorous message as an ASCII string to 
+the client on port 5433.  The client will send then present a formatted string 
+to the monitor.
+
+Compile
+-------
+To compile ther server program use "make listen".  To compile to the client
+program use "make talk".  To remove certain files for clean up use "make clean".
+
+
+How to run
+----------
+Open two terminals to see the communication or use two computers to see how they
+communicate.  Start with the server side, use "./listen". On the client side use 
+"./talk <ipaddress> <message>".  
+
